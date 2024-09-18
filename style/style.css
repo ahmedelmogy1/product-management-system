@@ -1,0 +1,74 @@
+.form-control {
+    background-color: rgb(244, 237, 237);
+}
+
+.form-control:focus {
+    background-color: rgb(244, 237, 237);
+}
+
+.form-floating>.form-control:focus~label::after {
+    background-color: rgb(244, 237, 237);
+}
+
+.card {
+    box-shadow: 0 0 4px 0px #0000003b;
+    border: 0px;
+
+}
+.img{
+    aspect-ratio:1;
+    object-fit: contain;
+}
+.form-floating input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.form-floating>.form-control:focus {
+    border: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.cahngeColor h2 {
+    background-image: linear-gradient(to right, black, #2d389d 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 400%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.layer1 {
+
+    /* -webkit-backdrop-filter: blur(5px); */
+    backdrop-filter: blur(0px);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+    transition: backdrop-filter 300ms ease-in-out, background-color 300ms ease-in-out, 
+    opacity 300ms ease-in-out;
+    opacity: 0;
+
+    .button{
+        margin-bottom: 80%;
+        transition:margin-bottom 300ms ease ;
+    }
+}
+
+.layer1:hover {
+    backdrop-filter: blur(1.5px);
+    background-color: rgba(0, 0, 0, 0.39);
+    opacity: 1;
+    .button{
+        margin-bottom: 1%;
+    }
+}
